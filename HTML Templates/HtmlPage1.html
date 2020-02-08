@@ -1,0 +1,334 @@
+﻿
+<!DOCTYPE html>
+<head id="Head1"><title>
+</title>
+    <style>
+        #align {
+
+        }
+        .text-right {
+    text-align: right;
+}
+        .addr {
+            margin-bottom: 10px;
+            font-style: normal;
+            margin-left: 20px;
+            line-height: 1.428571429;
+        }
+
+        .divCompany {
+            padding: 10px;
+            height: 320px;
+        }
+
+        .responsive-textbox {
+            width: 50%;
+        }
+
+        span#lblCompanyName {
+            font-size: 18px !important;
+            color: #000 !important;
+        }
+
+        .table > thead > tr > td {
+            padding: 1px;
+            line-height: 1.428571429;
+            vertical-align: top;
+            border-top: 1px solid #ddd;
+            margin-left: 10px;
+        }
+        .column {
+          float: left;
+          width: 30.33%;
+          padding: 10px;/* Should be removed. Only for demonstration */
+        }
+        .col-3{
+            float: left;
+          width: 15%;
+          padding: 10px;
+        }
+        .col-6{
+            float: left;
+          width: 60%;
+         
+        }
+         .col-4{
+            float: left;
+          width: 20%;
+        
+        }
+        .id{
+            float: left;
+          width: 50%;
+          margin-left: 5px;
+        }
+        .email{
+            float: left;
+          width: 49%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .col-md-3{
+             float: left;
+           width: 24%;
+          height: 100%;
+    overflow: hidden;
+        }
+        .table > thead > tr > td {
+            line-height: 1.428571429;
+            vertical-align: top;
+            border: 1px solid #ddd;
+            margin-left: 0px;
+             table-layout: fixed;
+           }
+           .table-bordered {
+            /*border: 1px solid #ddd;*/
+            empty-cells: show;
+        }
+        table {
+        /*border-collapse: collapse;*/
+        border-spacing: 0;
+         empty-cells: show;
+         }
+        table td[class*=col-], table th[class*=col-] {
+            position: static;
+            float: none;
+            display: table-cell;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .inner {
+          overflow: auto;
+          display: flex;
+          word-wrap: break-word;
+          min-height: 10px;
+          border: 1px solid black;
+        }
+        thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+    </style>
+</head>
+<body style="font-size:12px">
+
+
+        <div id="divprint" class="container" style="border: 1px solid black; width: 745px">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div class="row" style="border-bottom: 1px solid black;margin-top: 13px;">
+                        <div class="col-3">
+                            <div>
+                                 <div>
+                                <img src="http://demo.gymtime.in/CompanyLogo/NavkarDemo_2020125141355.png" style="width: 120px; height: 100px;" />                                                          
+                                </div>                
+                            </div>
+                        </div>
+                        <div class="col-6" style="margin-left: 0px;">
+                            <div class="addr">
+                                 <table>
+                                <thead>
+                                    <tr>
+                                        <td  class="col-md-1"><strong>#CompanyName</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>#CompanyAddress</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>#Branch</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>#Contact</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>#CompanyGstNo</strong></td>
+                                    </tr>
+                                </thead>
+                            </table>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-4" style="text-align: right;">
+                               <table>
+                                <thead>
+                                    <tr>
+                                        <td ><strong>Invoice No : #InvoiceId</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td ><strong>Invoice Date :#InvoiceDate</strong></td>
+                                    </tr>
+                                   
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 9px; border-bottom: 1px solid black">
+                        <div class="id" style="text-align: inherit">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>ID:</strong></td>
+                                        <td  class="text-left col-md-1"> #ID</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>Name:</strong></td>
+                                        <td  class="text-left col-md-1">#Name</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-left col-md-1"><strong>Contact:</strong></td>
+                                        <td  class="text-left col-md-1">#cCntact</td>
+                                        <td class="text-right col-md-5"><strong></strong></td>
+                                        <td class="text-right col-md-5"></td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                         <div class="email" style="margin-left: 0px;">
+                              <table>
+                                <thead>
+                                    <tr>
+                                         <td class="text-right col-md-5"><strong>Email:</strong></td>
+                                        <td class="text-left col-md-5">#Email</asp:Label></td>
+                                     </tr>
+                                     <tr>
+                                          <td class="text-right col-md-5"><strong>GST No:</strong></td>
+                                        <td class="text-left col-md-5">#GstNo</td>
+                                     </tr>
+                                </thead>
+                            </table>
+                         </div>
+                    </div>
+                    <div class="row">                                                                                       
+                        <div  style="text-align: inherit;">
+                            <div class="container" style="width:100%; overflow: hidden;padding: 0px 5px 5px 5px;">
+                                <table class="table table-bordered" style="margin-bottom: 0px;width:100%;padding: 5px;">
+                                    <thead >
+                                        <tr  style="width:100%;border: thick; border-color: black;">
+                                            <td scope="row" class="col-md-3"><strong>Package :</strong></td>
+                                            <td scope="row" class="col-md-3">#Package Training   1month  12session  Package Training 1month 12session DFSF SJGG SJGFDG</td>
+                                            <td scope="row" class="col-md-3"><strong>Amount</strong></td>
+                                            <td scope="row" class="col-md-3">#Amount    Package Training 1month 12session DFSF SJGG SJGFDG</td>
+                                        </tr>
+                                        <tr style="width:100%;border: thick; border-color: black;">
+                                            <td class="col-md-3"><strong>Duration/Sessions :</strong></td>
+                                             <td class="col-md-3">#Duration/#Session"</td>
+                                            <td class="col-md-3"><strong>Discount</strong></td>
+                                            <td class="col-md-3">#Discount</td>
+                                        </tr>
+                                        <tr style="width:100%;border: thick; border-color: black;">
+
+                                            <td class="col-md-3"><strong>Date :</strong></td>
+                                            <td class="col-md-3">#StartDate to #EndDate</td>
+                                            <td class="col-md-3"><strong>Reg Fees</strong></td>
+                                            <td class="col-md-3">#RegFees"</td>
+                                        </tr>
+                                        <tr style="width:100%;border: thick; border-color: black;">
+
+                                            <td class="col-md-3"><strong>Time  :</strong></td>
+                                            <td class="col-md-3">#Time</td>
+                                            <td class="col-md-3"><strong>Total Amount</strong></td>
+                                            <td class="col-md-3">#TotalAmount</td>
+                                        </tr>
+                                        <tr style="width:100%;border: thick; border-color: black;">
+
+                                            <td class="col-md-3"><strong>Instructor:</strong></td>
+                                             <td class="col-md-3">#InstructorName fgfh  Package Training 1month 12session DFSF SJGG SJGFDG</td>
+                                            <td class="col-md-3"><strong>Paid Amount</strong></td>
+                                            <td class="col-md-3">#PaidAmount hfghh</td>
+                                        </tr>
+                                        <tr style="width:100%;border: thick; border-color: black;">
+                                            <td class="col-md-3"><strong>&nbsp;  </strong></td>                          
+                                            <td class="col-md-3"><strong>&nbsp; </strong></td>
+                                            <td class="col-md-3"><strong>Balance</strong></td>
+                                            <td class="col-md-3">#Balance</td>
+                                        </tr>                                                                             
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div >
+                            <div>
+                                <div style="padding-left: 5px;">
+                                    <h3 ><strong>Payment Transaction:</strong></h3>
+                                </div>
+                                <div  style="width:99%; overflow: hidden;padding: 0px 5px 5px 5px;">
+                                        <table class="table table-bordered" style="margin-bottom: 0px;width:100%;" border =1>
+                                            <thead>
+                                                <tr style="width:100%;border: thick; border-color: #e6dcdc;padding: 0px;">
+                                                    <td style="padding: 3px;"><strong>#RNo</strong></td>
+                                                    <td style="padding: 3px;"><strong>Pay Date</strong></td>
+                                                    <td style="padding: 3px;"><strong>Subtotal</strong></td>
+                                                    <td style="padding: 3px;"><strong>Tax</strong></td>
+                                                    <td style="padding: 3px;"><strong>CGST(5%)</strong></td>
+                                                    <td style="padding: 3px;"><strong>SGST(5%)</strong></td>
+                                                    <td style="padding: 3px;"><strong>Tax Amt</strong></td>
+                                                    <td style="padding: 3px;"><strong>Paid Amt</strong></td>
+                                                    <td style="padding: 3px;"><strong>Pay Mode</strong></td>
+                                                    <td style="padding: 3px;"><strong>Pay Details</strong></td>
+                                                    <td style="padding: 3px;"><strong>Executive</strong></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="width:100%;border: thick; border-color:#e6dcdc;">
+                                                    <td style="padding: 3px;">
+                                                       #RNo</td>                                            
+                                                    <td style="padding: 3px;">
+                                                       #PayDate</td>
+                                                    <td style="padding: 3px;">
+                                                        #SubTotal</td>
+                                                    <td style="padding: 3px;"> 
+                                                        #Tax</td>
+                                                    <td style="padding: 3px;">
+                                                        #CGST</td>
+                                                     <td style="padding: 3px;">
+                                                         #SGST</td>
+                                                    <td style="padding: 3px;">
+                                                       #TaxAmount</td>
+                                                    <td style="padding: 3px;">
+                                                        #PaidAmount</td>
+                                                    <td style="padding: 3px;">
+                                                        #PaymentMode</td>
+                                                    <td style="padding: 3px;">
+                                                        #PaymentDetails </td>
+                                                    <td style="padding: 3px;">
+                                                        #Executive</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div style="margin-top: 4px; margin-bottom: 4px;padding: 5px;">
+                                    <h3 class="panel-title" style="margin-bottom: 6px"><strong>Terms And Conditions : </strong></h3>
+                                    <div style="border: 1px solid black">                                          
+                                        <div id="TermsNConditions" style="margin-left:10px" runat="server">#TermsAndConditions
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+</body>
+</html>
